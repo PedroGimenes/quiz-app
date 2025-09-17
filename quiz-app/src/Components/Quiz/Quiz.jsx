@@ -69,12 +69,12 @@ const Quiz = () => {
               <li ref={Option3} onClick={(e)=>{checkAns(e,3)}}>{question.option3}</li>
               <li ref={Option4} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</li>
            </ul>
-           <button onClick={next}>Next</button>
-           <div className="index">{index+1} of {data.length} questions</div>
+           <button onClick={next}>Proximo</button>
+           <div className="index">{index+1} de {data.length} Perguntas</div>
            </>}
            {result?<>
-           <h2>You Scored {score} out of {data.length}</h2>
-           <button onClick={reset}>Reset</button>
+           <h2>Sua pontuação é {score} de {data.length}</h2>
+           <button onClick={reset}>Resetar</button>
            </>:<></>}
            
         </div>
